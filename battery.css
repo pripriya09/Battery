@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+.battery{
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    border: 4px solid black;
+    position: absolute;
+    top: 84px;
+    left: 183px;
+   
+}
+.box{
+    height: 20px;
+    width: 20px;
+    background-color: #006400;
+    border: 1px solid black;
+    position: absolute;
+    top: 120px;
+    left: 382px;
+}
+.mainbox{
+    position: relative;
+}
+.charge{
+    height: 90px;
+    width: 10px;
+    margin: 1px 0 0 0 ;
+    background-color: rgb(164, 245, 35);
+    position: relative;
+    animation: change 3s ease-in-out infinite;
+    border: 2px solid darkgreen;
+}
+@keyframes change{
+    0%{
+      position: absolute;
+      width: 40px;
+    }
+    25%{
+        position: absolute;
+        width: 90px;
+    }
+    75%{
+        position: absolute;
+        width:140px;
+    }
+    100%{
+        position: absolute;
+        width: 190px;
+    }
+}
+.line{
+    height: 19px;
+    width: 2px;
+    
+   margin: auto;
+}
